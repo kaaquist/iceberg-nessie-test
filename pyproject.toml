@@ -1,0 +1,19 @@
+[project]
+name = "iceberg-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kaaquist", email = "kasperaaquist@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pyspark==3.5.6",
+]
+
+[project.scripts]
+iceberg-test = "iceberg_test:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
